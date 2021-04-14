@@ -18,9 +18,10 @@
             <li>git init (初始化)<br>
                 git add README.md (可不填)<br>
                 git commit -m "first commit" (設定commit名稱並存入changes)<br>
-                git branch -M main (設定default分支名稱，後續可修改)<br>
+                git branch -M master (設定default分支名稱，後續可修改)<br>
                 git remote add origin https://github.com/Ryan-Lan00/123.git (與local資料連結)<br>
-                git push -u origin main (設定倉庫名稱(origin)設定後無法更改)</li>
+                git push -u origin master (設定倉庫名稱(origin)設定後無法更改)</li>
+                git pull -u origin master (push pull 都先輸入讓他記錄該到哪個分支)
         </ol>
     </p>
     <h1>推送編輯</h1>
@@ -44,6 +45,15 @@
         status<br>
         git clone url<br>
         路線圖 add --> commit --> push
+    </p>
+
+    <h1>更改npm start port</h1>
+    <p>
+        找到package.json<br>
+        "scripts": --> "start":<br>
+        "react-scripts start"<br>
+        增加為<br>
+        "set PORT=3050 && react-scripts start"
     </p>
 
     <h1><a href="riddle.html#riddle">Riddle</a></h1>
